@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- The title of the page. This is what will show up in the browser tab and search engine results -->
+	<title>My Tiny Website</title>
+
+	<!-- The viewport of the page. This allows the website to be responsive (i.e. change based on the device’s screen size) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The favicon of the page. This is the icon that will show up in the browser tab -->
+	<link rel="icon" type="image/png" href="assets/favicon.ico">
+	
+	<!-- The link to the style sheet of the page. This connects the HTML file to the CSS file that styles the page -->
+	<!-- The path to the CSS file is *relative* to the HTML file -->
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- The description of the page. This is what will show up in search engine results -->
+	<meta name="description" content="This is a tiny website">
+
+	<!-- The author of the page. This is who created the website -->
+	<meta name="author" content="Rifke Sadleir">
+
+	<!-- The keywords of the page. This is what will help search engines understand the content of the page -->
+	<meta name="keywords" content="tiny website">
+
+	<!-- The Open Graph (OG) meta tags. This is what will show up in social media posts/sharing on messaging apps and social media platforms -->
+	<meta property="og:title" content="My Tiny Website">
+	<meta property="og:description" content="This is a tiny website">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mytinywebsite.com">
+	<meta property="og:image" content="https://mytinywebsite.com/og-image.jpg">
+
+	<!-- The Twitter Card meta tags. This is what will show up in tweets/sharing on messaging apps and social media platforms -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="My Tiny Website">
+	<meta name="twitter:description" content="This is a tiny website">
+	<meta name="twitter:image" content="https://mytinywebsite.com/og-image.jpg">
+
+</head>
+
+<body>
+	<!-- The header of the page. This is the top section of the page -->
+	<header>
+		<h1>About</h1>
+		<nav class="main-menu">
+			<ul class="main-menu-list">
+				<!-- This is a list item -->
+				<li>
+					<!-- This is a link to another page on the website. The href attribute is the path to the page -->
+					<!-- This is a relative path, as it is relative to where the current page lives in the file structure -->
+					<a href="index.html">Home</a>
+				</li>
+
+				<!-- This is a link to an external page. The href attribute is the URL of the page -->
+				<!-- This is an absolute path, as it is the full URL of the page. We use absolute paths for external links 
+				 that exist outside of the file structure of the website -->
+				<li><a target="_blank" href="https://www.instagram.com/rifke.world">Instagram</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- The main content of the page. This is the middle section of the page -->
+	<main>
+		<p>Welcome to the about page! Usually, this page would contain some useful information about the website or the owner of the website but in this case, there’s nothing useful to be found! Maybe you could change that?</p>
+	</main>
+
+	<!-- The script of the page. This is where the JavaScript code is placed -->
+	 <!-- The path to the JavaScript file is *relative* to the HTML file, just like the CSS file -->
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

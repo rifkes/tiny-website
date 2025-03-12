@@ -1,0 +1,96 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'geist', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	font-weight: 900;
+	font-family: 'geist', sans-serif;
+}
+
+main {
+	padding: 20px;
+	padding-top: 120px;
+}
+
+.main-menu {
+	position: fixed;
+	right: 0;
+	padding: 10px 20px;
+	max-width: 30vw;
+}
+
+/* nested selectors */
+.main-menu-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+	li {
+		margin: 0;
+		list-style: none;
+		text-align: right;
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+.secret-link {
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.2rem;
+	color: #000;
+	border-radius: 100px;
+	padding: 20px;
+	text-decoration: none;
+	background-color: lime;
+	transition: background-color 0.3s ease, color 0.3s ease;
+
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+p {
+	line-height: 1.5;
+	text-wrap: balance;
+	max-width: 80ch;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
